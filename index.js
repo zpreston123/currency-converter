@@ -19,7 +19,7 @@ const getExchangeRate = async (fromCurrency, toCurrency) => {
     } catch (error) {
         throw new Error(`Unable to get currency ${fromCurrency} and ${toCurrency}`);
     }
-}
+};
 
 const getCountries = async (currencyCode) => {
     try {
@@ -29,7 +29,7 @@ const getCountries = async (currencyCode) => {
     } catch (error) {
         throw new Error(`Unable to get countries that use ${currencyCode}`);
     }
-}
+};
 
 const convertCurrency = async (fromCurrency, toCurrency, amount) => {
     fromCurrency = fromCurrency.toUpperCase();
